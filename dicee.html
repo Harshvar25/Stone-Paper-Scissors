@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>StonePaperScissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animation.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="top">
+      <h1>Start Playing</h1>
+      <button class="start" onclick="startGame()">Start</button>
+      <button class="reset" onclick="resetFunction()">reset</button>
+      <button class="playAgain" onclick="startGame()">Play Again</button>
+    </div>
+
+    <div class="content">
+
+      <h2>About Game</h2>
+      <p>This is a simple Stone Paper Scissors Game created using HTML,CSS and Javascript. So have fun and enjoy. </p>
+
+      <div class="contact">
+
+        <h2>Liked The Game?</h2>
+
+        <form action="mailto:harshbais87@gmail.com" method="post" enctype="text/plain">
+
+          <div class="details">
+            <div>
+              <label for="fname">Name:</label>
+              <input type="text" id="input1" name="Name " placeholder="Enter Your Name" onclick="inputClick()"><br>
+            </div>
+            <div>
+              <label for="lname">Email:</label>
+              <input type="email" id="input2" name="Email " placeholder="Enter Your Email" onclick="inputClick()"><br>
+            </div>
+          </div>
+
+          <div class="message">
+            <textarea name="Comment " id="textbox" rows="5" cols="30" placeholder="Comment text."></textarea>
+            <button id="formbtn">Send</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+
+    <div class="img-container">
+      <div class="element">
+        <p>Player 1</p>
+        <img class="img1" src="StonePaperScissors/stone.png">
+      </div>
+
+      <div class="element">
+        <p>Player 2</p>
+        <img class="img2" src="StonePaperScissors/Paper.png">
+      </div>
+    </div>
+  </div>
+
+  <script src="javaScrpit.js"></script>
+</body>
+
+<footer>
+  Harshvardhan's Project
+</footer>
+
+</html>
